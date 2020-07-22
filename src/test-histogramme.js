@@ -38,7 +38,7 @@ class Histogramme extends Component{
 	}
 	
 	handleClick(){
-		alert("1PRÉVENTIONRestez chez vous")
+		alert("Lavez les mains souvent")
 	}
 }
 
