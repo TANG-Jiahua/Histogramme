@@ -14,6 +14,7 @@ class Histogramme extends Component{
             title: {
                 text: 'ECharts Histogramme'
             },
+	    tooltip: {},
     
             xAxis: {
                 data: ["Paris 75","Seine-et-Marne 77","Yveline 78","Essonnne 91","Hauts-de-Seine 92","Seine-Saint-Denis 93","Val-de-Marne 94","Val d'Oise 95"]
