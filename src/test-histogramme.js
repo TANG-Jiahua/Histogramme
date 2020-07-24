@@ -14,32 +14,40 @@ class Histogramme extends Component{
             title: {
                 text: 'ECharts Histogramme'
             },
-	    tooltip: {},
+            tooltip: {},
+    
     
             xAxis: {
-                data: ["Paris 75","Seine-et-Marne 77","Yveline 78","Essonnne 91","Hauts-de-Seine 92","Seine-Saint-Denis 93","Val-de-Marne 94","Val d'Oise 95"]
+                data: ["Paris","Seine-et-Marne","Yveline","Essonnne","Hauts-de-Seine","Seine-Saint-Denis","Val-de-Marne","Val d'Oise"],
+                
             },
+
             yAxis: {},
             series: [{
                 name: 'Region',
                 type: 'bar',
                 data: nombre
-            }
-		]
+
+            }]
         };
     }
     render(){
         const {nombre} = this.state;
         return(
+            <Fragment>
+
             <div>
                     <ReactEcharts option={this.getOption(nombre)} />
-					<button	onClick={this.handleClick}>Plus d'info</button>
             </div>
+
+					<button onClick={this.handleClick}>Plus d'info</button>
+            
+            </Fragment>
         )
 	}
 	
 	handleClick(){
-		alert("Lavez les mains souvent")
+		alert("Laver les mains")
 	}
 }
 
